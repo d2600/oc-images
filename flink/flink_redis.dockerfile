@@ -1,4 +1,4 @@
-FROM flink:1.19.0-scala_2.13
+FROM flink:1.19.0-scala_2.12
 
 LABEL maintainer="damian.ruiz"
 LABEL description="Flink 1.19 con conectores Redis y S3"
@@ -7,7 +7,7 @@ LABEL version="redis-lab3"
 ENV FLINK_HOME=/opt/flink
 ENV FLINK_LIB_DIR=${FLINK_HOME}/lib
 ARG REDIS_CONNECTOR_VERSION=1.1.0
-ARG SCALA_VERSION=2.13
+ARG SCALA_VERSION=2.12
 ARG FLINK_VERSION=1.19.0
 
 # ---------------------------------------------------------
